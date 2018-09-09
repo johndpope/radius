@@ -27,7 +27,7 @@ let X_OFFSET = 652.0
 let Y_OFFSET = 200.0
 let COORD_SCALE = 0.00001
 
-let DEMO_MODE = true
+let DEMO_MODE = false
 
 class Zone {
     var id: Int = 0
@@ -167,9 +167,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
             self.mapView.isZoomEnabled = false
         }
         
-        let overlay = MKTileOverlay(urlTemplate: "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png")
-        overlay.canReplaceMapContent = true
-        self.mapView.add(overlay)
+//        let overlay = MKTileOverlay(urlTemplate: "http://a.tile.stamen.com/toner/${z}/${x}/${y}.png")
+//        overlay.canReplaceMapContent = true
+//        self.mapView.add(overlay)
 
 //        configureTileOverlay()
         
@@ -199,12 +199,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
 //    }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let isFirstLocation = self.locationCoordinate == nil
+        
         self.locationCoordinate = locations.last!.coordinate
         
-        let center = CLLocationCoordinate2D(latitude: self.locationCoordinate!.latitude, longitude: self.locationCoordinate!.longitude)
-        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.015, longitudeDelta: 0.015))
-        
-        self.mapView.setRegion(region, animated: true)
+        if (!DEMO_MODE || isFirstLocation) {
+            let center = CLLocationCoordinate2D(latitude: self.locationCoordinate!.latitude, longitude: self.locationCoordinate!.longitude)
+            let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.013, longitudeDelta: 0.013))
+            
+            self.mapView.setRegion(region, animated: true)
+        }
 
         if (!DEMO_MODE) {
             updateLocationMarker()
@@ -232,20 +236,20 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         if overlay is MasterZoneMKCircle {
             let circle = MKCircleRenderer(overlay: overlay)
-            circle.strokeColor = UIColor(red: 152.0/255.0, green: 95.0/255.0, blue: 236.0/255.0, alpha: 1.0)
-            circle.fillColor = UIColor(red: 152.0/255.0, green: 95.0/255.0, blue: 236.0/255.0, alpha: 0.2)
+            circle.strokeColor = UIColor(red: 161.0/255.0, green: 102.0/255.0, blue: 255.0/255.0, alpha: 1.0)
+//            circle.strokeColor = UIColor(red: 161.0/255.0, green: 102.0/255.0, blue: 255.0/255.0, alpha: 1.0)
             circle.lineWidth = 2
             return circle
         } else if overlay is SubZoneMKCircle {
             let circle = MKCircleRenderer(overlay: overlay)
-            circle.strokeColor = UIColor(red: 120.0/255.0, green: 255.0/255.0, blue: 235.0/255.0, alpha: 1.0)
-            circle.strokeColor = UIColor(red: 120.0/255.0, green: 255.0/255.0, blue: 235.0/255.0, alpha: 0.2)
+            circle.strokeColor = UIColor(red: 26.0/255.0, green: 255.0/255.0, blue: 217.0/255.0, alpha: 1.0)
+//            circle.strokeColor = UIColor(red: 26.0/255.0, green: 255.0/255.0, blue: 217.0/255.0, alpha: 1.0)
             circle.lineWidth = 2
             return circle
         } else if overlay is MKPolygon {
             let circle = MKPolygonRenderer(polygon: (overlay as! MKPolygon))
-            circle.strokeColor = UIColor(red: 133.0/255.0, green: 206.0/255.0, blue: 95.0/255.0, alpha: 1.0)
-            circle.fillColor = UIColor(red: 133.0/255.0, green: 206.0/255.0, blue: 95.0/255.0, alpha: 0.4)
+            circle.strokeColor = UIColor(red: 195.0/255.0, green: 255.0/255.0, blue: 80.0/255.0, alpha: 1.0)
+//            circle.strokeColor = UIColor(red: 195.0/255.0, green: 255.0/255.0, blue: 80.0/255.0, alpha: 1.0)
             circle.lineWidth = 2
             return circle
         } else if overlay is LocationMarkerMKCircle {
@@ -269,22 +273,22 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     func initZones() {
         zones = []
         
-        addMasterZone(x: 551, y: 303, radius: MASTER_ZONE_RADIUS)
-        addMasterZone(x: 852, y: 141, radius: MASTER_ZONE_RADIUS)
-        addMasterZone(x: 913, y: 745, radius: MASTER_ZONE_RADIUS)
+        addMasterZone(x: 551, y: 323, radius: MASTER_ZONE_RADIUS)
+        addMasterZone(x: 852, y: 181, radius: MASTER_ZONE_RADIUS)
+        addMasterZone(x: 913, y: 765, radius: MASTER_ZONE_RADIUS)
         
-        addSubZone(x: 585, y: 315, radius: SUB_ZONE_RADIUS * 1.4)
-        addSubZone(x: 696, y: 427, radius: SUB_ZONE_RADIUS * 0.8)
-        addSubZone(x: 773, y: 388, radius: SUB_ZONE_RADIUS * 0.8)
-        addSubZone(x: 779, y: 465, radius: SUB_ZONE_RADIUS)
+        addSubZone(x: 604, y: 364, radius: SUB_ZONE_RADIUS * 2.0)
+        addSubZone(x: 629, y: 398, radius: SUB_ZONE_RADIUS * 0.9)
+        addSubZone(x: 711, y: 378, radius: SUB_ZONE_RADIUS * 1.0)
+        addSubZone(x: 687, y: 448, radius: SUB_ZONE_RADIUS * 1.0)
         
-        addSubZone(x: 844, y: 287, radius: SUB_ZONE_RADIUS)
-        addSubZone(x: 916, y: 264, radius: SUB_ZONE_RADIUS)
-        addSubZone(x: 1050, y: 288, radius: SUB_ZONE_RADIUS)
+        addSubZone(x: 925, y: 213, radius: SUB_ZONE_RADIUS * 2.0)
+        addSubZone(x: 984, y: 239, radius: SUB_ZONE_RADIUS * 0.9)
+        addSubZone(x: 991, y: 296, radius: SUB_ZONE_RADIUS * 1.0)
 
-        addSubZone(x: 987, y: 831, radius: SUB_ZONE_RADIUS)
-        addSubZone(x: 1080, y: 801, radius: SUB_ZONE_RADIUS * 0.7)
-        addSubZone(x: 1061, y: 926, radius: SUB_ZONE_RADIUS)
+        addSubZone(x: 979, y: 816, radius: SUB_ZONE_RADIUS * 2.0)
+        addSubZone(x: 1002, y: 868, radius: SUB_ZONE_RADIUS * 0.6)
+        addSubZone(x: 1043, y: 852, radius: SUB_ZONE_RADIUS * 1.3)
         
         addFreeZone(coordinates: [
             toCoordinate(x: 641, y: 23),
@@ -373,7 +377,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     }
     
     func toCoordinate(x: Double, y: Double) -> CLLocationCoordinate2D {
-        return CLLocationCoordinate2D(latitude: toLat(y: -y), longitude: toLon(x: (x - 490.0) * 2.0))
+        return CLLocationCoordinate2D(latitude: toLat(y: -y - 50.0), longitude: toLon(x: (x - 290.0) * 1.4))
     }
     
     

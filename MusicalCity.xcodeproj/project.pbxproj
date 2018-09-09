@@ -146,9 +146,6 @@
 		C1B5A13E2144753F00FDC0A3 /* CH-116BPM-Siren-BLUE3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "CH-116BPM-Siren-BLUE3.wav"; sourceTree = "<group>"; };
 		C1B5A13F2144753F00FDC0A3 /* CH-116BPM-Vocal-BLUE1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "CH-116BPM-Vocal-BLUE1.wav"; sourceTree = "<group>"; };
 		C1B5A1402144753F00FDC0A3 /* CH-116BPM-Main-PINK.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "CH-116BPM-Main-PINK.wav"; sourceTree = "<group>"; };
-		C1B5A1412144753F00FDC0A3 /* Icon
- */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Icon
-"; sourceTree = "<group>"; };
 		C1B5A1422144753F00FDC0A3 /* CH-116BPM-Trumpet-BLUE2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "CH-116BPM-Trumpet-BLUE2.wav"; sourceTree = "<group>"; };
 		C1B5A1432144753F00FDC0A3 /* CH-116BPM-Kick-BLUE4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "CH-116BPM-Kick-BLUE4.wav"; sourceTree = "<group>"; };
 		C1B5A1442144753F00FDC0A3 /* MTF_Green_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = MTF_Green_1.wav; sourceTree = "<group>"; };
@@ -161,9 +158,6 @@
 		C1B5A14C2144753F00FDC0A3 /* 7.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = 7.aif; sourceTree = "<group>"; };
 		C1B5A14D2144753F00FDC0A3 /* 6.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = 6.aif; sourceTree = "<group>"; };
 		C1B5A14E2144753F00FDC0A3 /* 4.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4.aif; sourceTree = "<group>"; };
-		C1B5A1502144753F00FDC0A3 /* Icon
- */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Icon
-"; sourceTree = "<group>"; };
 		C1B5A1512144753F00FDC0A3 /* MTF_Ambient_80bpm_Blue_2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = MTF_Ambient_80bpm_Blue_2.wav; sourceTree = "<group>"; };
 		C1B5A1522144753F00FDC0A3 /* MTF_Ambient_80bpm_Blue_3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = MTF_Ambient_80bpm_Blue_3.wav; sourceTree = "<group>"; };
 		C1B5A1532144753F00FDC0A3 /* MTF_Ambient_80bpm_Blue_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = MTF_Ambient_80bpm_Blue_1.wav; sourceTree = "<group>"; };
