@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C162F1082145113600C70995 /* House-130BPM-ARP-Blue2.wav in Resources */ = {isa = PBXBuildFile; fileRef = C162F1072145113600C70995 /* House-130BPM-ARP-Blue2.wav */; };
+		C162F10B2145114000C70995 /* CH-116BPM-Vocal-BLUE4.wav in Resources */ = {isa = PBXBuildFile; fileRef = C162F1092145114000C70995 /* CH-116BPM-Vocal-BLUE4.wav */; };
+		C162F10C2145114000C70995 /* CH-116BPM-Kick-BLUE1.wav in Resources */ = {isa = PBXBuildFile; fileRef = C162F10A2145114000C70995 /* CH-116BPM-Kick-BLUE1.wav */; };
 		C1B59E5221440B1B00470122 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B59E5121440B1B00470122 /* AppDelegate.swift */; };
 		C1B59E5421440B1B00470122 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B59E5321440B1B00470122 /* ViewController.swift */; };
 		C1B59E5721440B1B00470122 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1B59E5521440B1B00470122 /* Main.storyboard */; };
@@ -36,26 +39,19 @@
 		C1B5A144214453AD00470122 /* MusicalCity.csd in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A13A214453AC00470122 /* MusicalCity.csd */; };
 		C1B5A1592144753F00FDC0A3 /* 8.aif in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A13C2144753F00FDC0A3 /* 8.aif */; };
 		C1B5A15A2144753F00FDC0A3 /* CH-116BPM-Siren-BLUE3.wav in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A13E2144753F00FDC0A3 /* CH-116BPM-Siren-BLUE3.wav */; };
-		C1B5A15B2144753F00FDC0A3 /* CH-116BPM-Vocal-BLUE1.wav in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A13F2144753F00FDC0A3 /* CH-116BPM-Vocal-BLUE1.wav */; };
 		C1B5A15C2144753F00FDC0A3 /* CH-116BPM-Main-PINK.wav in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A1402144753F00FDC0A3 /* CH-116BPM-Main-PINK.wav */; };
-		C1B5A15D2144753F00FDC0A3 /* Icon
- in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A1412144753F00FDC0A3 /* Icon
- */; };
+		C1B5A15D2144753F00FDC0A3 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		C1B5A15E2144753F00FDC0A3 /* CH-116BPM-Trumpet-BLUE2.wav in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A1422144753F00FDC0A3 /* CH-116BPM-Trumpet-BLUE2.wav */; };
-		C1B5A15F2144753F00FDC0A3 /* CH-116BPM-Kick-BLUE4.wav in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A1432144753F00FDC0A3 /* CH-116BPM-Kick-BLUE4.wav */; };
 		C1B5A1602144753F00FDC0A3 /* MTF_Green_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A1442144753F00FDC0A3 /* MTF_Green_1.wav */; };
 		C1B5A1612144753F00FDC0A3 /* MTF_Green_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A1452144753F00FDC0A3 /* MTF_Green_3.wav */; };
 		C1B5A1622144753F00FDC0A3 /* MTF_Green_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A1462144753F00FDC0A3 /* MTF_Green_2.wav */; };
 		C1B5A1632144753F00FDC0A3 /* House-130BPM-Pink.wav in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A1482144753F00FDC0A3 /* House-130BPM-Pink.wav */; };
-		C1B5A1642144753F00FDC0A3 /* House-130BPM-Grinder-Blue2.wav in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A1492144753F00FDC0A3 /* House-130BPM-Grinder-Blue2.wav */; };
 		C1B5A1652144753F00FDC0A3 /* House-130BPM-Perk-Blue1.wav in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A14A2144753F00FDC0A3 /* House-130BPM-Perk-Blue1.wav */; };
 		C1B5A1662144753F00FDC0A3 /* House-130BPM-Lead-Blue3.wav in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A14B2144753F00FDC0A3 /* House-130BPM-Lead-Blue3.wav */; };
 		C1B5A1672144753F00FDC0A3 /* 7.aif in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A14C2144753F00FDC0A3 /* 7.aif */; };
 		C1B5A1682144753F00FDC0A3 /* 6.aif in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A14D2144753F00FDC0A3 /* 6.aif */; };
 		C1B5A1692144753F00FDC0A3 /* 4.aif in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A14E2144753F00FDC0A3 /* 4.aif */; };
-		C1B5A16A2144753F00FDC0A3 /* Icon
- in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A1502144753F00FDC0A3 /* Icon
- */; };
+		C1B5A16A2144753F00FDC0A3 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		C1B5A16B2144753F00FDC0A3 /* MTF_Ambient_80bpm_Blue_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A1512144753F00FDC0A3 /* MTF_Ambient_80bpm_Blue_2.wav */; };
 		C1B5A16C2144753F00FDC0A3 /* MTF_Ambient_80bpm_Blue_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A1522144753F00FDC0A3 /* MTF_Ambient_80bpm_Blue_3.wav */; };
 		C1B5A16D2144753F00FDC0A3 /* MTF_Ambient_80bpm_Blue_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A1532144753F00FDC0A3 /* MTF_Ambient_80bpm_Blue_1.wav */; };
@@ -67,6 +63,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C162F1072145113600C70995 /* House-130BPM-ARP-Blue2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "House-130BPM-ARP-Blue2.wav"; sourceTree = "<group>"; };
+		C162F1092145114000C70995 /* CH-116BPM-Vocal-BLUE4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "CH-116BPM-Vocal-BLUE4.wav"; sourceTree = "<group>"; };
+		C162F10A2145114000C70995 /* CH-116BPM-Kick-BLUE1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "CH-116BPM-Kick-BLUE1.wav"; sourceTree = "<group>"; };
 		C1B59E4E21440B1B00470122 /* MusicalCity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicalCity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1B59E5121440B1B00470122 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1B59E5321440B1B00470122 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -144,15 +143,12 @@
 		C1B5A13A214453AC00470122 /* MusicalCity.csd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MusicalCity.csd; sourceTree = "<group>"; };
 		C1B5A13C2144753F00FDC0A3 /* 8.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = 8.aif; sourceTree = "<group>"; };
 		C1B5A13E2144753F00FDC0A3 /* CH-116BPM-Siren-BLUE3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "CH-116BPM-Siren-BLUE3.wav"; sourceTree = "<group>"; };
-		C1B5A13F2144753F00FDC0A3 /* CH-116BPM-Vocal-BLUE1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "CH-116BPM-Vocal-BLUE1.wav"; sourceTree = "<group>"; };
 		C1B5A1402144753F00FDC0A3 /* CH-116BPM-Main-PINK.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "CH-116BPM-Main-PINK.wav"; sourceTree = "<group>"; };
 		C1B5A1422144753F00FDC0A3 /* CH-116BPM-Trumpet-BLUE2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "CH-116BPM-Trumpet-BLUE2.wav"; sourceTree = "<group>"; };
-		C1B5A1432144753F00FDC0A3 /* CH-116BPM-Kick-BLUE4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "CH-116BPM-Kick-BLUE4.wav"; sourceTree = "<group>"; };
 		C1B5A1442144753F00FDC0A3 /* MTF_Green_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = MTF_Green_1.wav; sourceTree = "<group>"; };
 		C1B5A1452144753F00FDC0A3 /* MTF_Green_3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = MTF_Green_3.wav; sourceTree = "<group>"; };
 		C1B5A1462144753F00FDC0A3 /* MTF_Green_2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = MTF_Green_2.wav; sourceTree = "<group>"; };
 		C1B5A1482144753F00FDC0A3 /* House-130BPM-Pink.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "House-130BPM-Pink.wav"; sourceTree = "<group>"; };
-		C1B5A1492144753F00FDC0A3 /* House-130BPM-Grinder-Blue2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "House-130BPM-Grinder-Blue2.wav"; sourceTree = "<group>"; };
 		C1B5A14A2144753F00FDC0A3 /* House-130BPM-Perk-Blue1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "House-130BPM-Perk-Blue1.wav"; sourceTree = "<group>"; };
 		C1B5A14B2144753F00FDC0A3 /* House-130BPM-Lead-Blue3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "House-130BPM-Lead-Blue3.wav"; sourceTree = "<group>"; };
 		C1B5A14C2144753F00FDC0A3 /* 7.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = 7.aif; sourceTree = "<group>"; };
@@ -378,13 +374,11 @@
 		C1B5A13D2144753F00FDC0A3 /* 2-ChillHouse-116BPM */ = {
 			isa = PBXGroup;
 			children = (
+				C162F10A2145114000C70995 /* CH-116BPM-Kick-BLUE1.wav */,
+				C162F1092145114000C70995 /* CH-116BPM-Vocal-BLUE4.wav */,
 				C1B5A13E2144753F00FDC0A3 /* CH-116BPM-Siren-BLUE3.wav */,
-				C1B5A13F2144753F00FDC0A3 /* CH-116BPM-Vocal-BLUE1.wav */,
 				C1B5A1402144753F00FDC0A3 /* CH-116BPM-Main-PINK.wav */,
-				C1B5A1412144753F00FDC0A3 /* Icon
- */,
 				C1B5A1422144753F00FDC0A3 /* CH-116BPM-Trumpet-BLUE2.wav */,
-				C1B5A1432144753F00FDC0A3 /* CH-116BPM-Kick-BLUE4.wav */,
 			);
 			path = "2-ChillHouse-116BPM";
 			sourceTree = "<group>";
@@ -392,8 +386,8 @@
 		C1B5A1472144753F00FDC0A3 /* 3-House-130BPM */ = {
 			isa = PBXGroup;
 			children = (
+				C162F1072145113600C70995 /* House-130BPM-ARP-Blue2.wav */,
 				C1B5A1482144753F00FDC0A3 /* House-130BPM-Pink.wav */,
-				C1B5A1492144753F00FDC0A3 /* House-130BPM-Grinder-Blue2.wav */,
 				C1B5A14A2144753F00FDC0A3 /* House-130BPM-Perk-Blue1.wav */,
 				C1B5A14B2144753F00FDC0A3 /* House-130BPM-Lead-Blue3.wav */,
 			);
@@ -403,8 +397,6 @@
 		C1B5A14F2144753F00FDC0A3 /* 1-Ambient-80BPM */ = {
 			isa = PBXGroup;
 			children = (
-				C1B5A1502144753F00FDC0A3 /* Icon
- */,
 				C1B5A1512144753F00FDC0A3 /* MTF_Ambient_80bpm_Blue_2.wav */,
 				C1B5A1522144753F00FDC0A3 /* MTF_Ambient_80bpm_Blue_3.wav */,
 				C1B5A1532144753F00FDC0A3 /* MTF_Ambient_80bpm_Blue_1.wav */,
@@ -441,7 +433,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = "Radius";
+				ORGANIZATIONNAME = Radius;
 				TargetAttributes = {
 					C1B59E4D21440B1B00470122 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -472,15 +464,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1B5A1672144753F00FDC0A3 /* 7.aif in Resources */,
-				C1B5A15D2144753F00FDC0A3 /* Icon
- in Resources */,
+				C1B5A15D2144753F00FDC0A3 /* (null) in Resources */,
 				C1B5A1652144753F00FDC0A3 /* House-130BPM-Perk-Blue1.wav in Resources */,
-				C1B5A16A2144753F00FDC0A3 /* Icon
- in Resources */,
+				C1B5A16A2144753F00FDC0A3 /* (null) in Resources */,
 				C1B5A1662144753F00FDC0A3 /* House-130BPM-Lead-Blue3.wav in Resources */,
 				C1B5A16C2144753F00FDC0A3 /* MTF_Ambient_80bpm_Blue_3.wav in Resources */,
+				C162F10C2145114000C70995 /* CH-116BPM-Kick-BLUE1.wav in Resources */,
 				C1B5A1702144753F00FDC0A3 /* 1.aif in Resources */,
-				C1B5A1642144753F00FDC0A3 /* House-130BPM-Grinder-Blue2.wav in Resources */,
 				C1B5A144214453AD00470122 /* MusicalCity.csd in Resources */,
 				C1B59E6A2144231700470122 /* Sound.csd in Resources */,
 				C1B5A1692144753F00FDC0A3 /* 4.aif in Resources */,
@@ -491,17 +481,17 @@
 				C1B5A16B2144753F00FDC0A3 /* MTF_Ambient_80bpm_Blue_2.wav in Resources */,
 				C1B5A16F2144753F00FDC0A3 /* 5.aif in Resources */,
 				C1B5A16E2144753F00FDC0A3 /* MTF_Ambient_80bpm_Pink.wav in Resources */,
+				C162F1082145113600C70995 /* House-130BPM-ARP-Blue2.wav in Resources */,
 				C1B5A1682144753F00FDC0A3 /* 6.aif in Resources */,
 				C1B5A1612144753F00FDC0A3 /* MTF_Green_3.wav in Resources */,
 				C1B5A16D2144753F00FDC0A3 /* MTF_Ambient_80bpm_Blue_1.wav in Resources */,
 				C1B5A1372144259B00470122 /* LICENSE.TXT in Resources */,
+				C162F10B2145114000C70995 /* CH-116BPM-Vocal-BLUE4.wav in Resources */,
 				C1B5A1722144753F00FDC0A3 /* 3.aif in Resources */,
 				C1B5A15E2144753F00FDC0A3 /* CH-116BPM-Trumpet-BLUE2.wav in Resources */,
 				C1B59E5921440B1D00470122 /* Assets.xcassets in Resources */,
 				C1B5A1632144753F00FDC0A3 /* House-130BPM-Pink.wav in Resources */,
 				C1B5A15C2144753F00FDC0A3 /* CH-116BPM-Main-PINK.wav in Resources */,
-				C1B5A15B2144753F00FDC0A3 /* CH-116BPM-Vocal-BLUE1.wav in Resources */,
-				C1B5A15F2144753F00FDC0A3 /* CH-116BPM-Kick-BLUE4.wav in Resources */,
 				C1B5A1712144753F00FDC0A3 /* 2.aif in Resources */,
 				C1B5A1602144753F00FDC0A3 /* MTF_Green_1.wav in Resources */,
 				C1B59E5721440B1B00470122 /* Main.storyboard in Resources */,

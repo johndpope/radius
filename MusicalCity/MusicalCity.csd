@@ -372,10 +372,10 @@ f1 0 0 1 "CH-116BPM-Main-PINK.wav" 0 0 0
 f2 0 0 1 "MTF_Ambient_80bpm_Pink.wav" 0 0 0 
 f3 0 0 1 "House-130BPM-Pink.wav" 0 0 0 
 
-f4 0 0 1 "CH-116BPM-Vocal-BLUE1.wav" 0 0 0 
+f4 0 0 1 "CH-116BPM-Kick-BLUE1.wav" 0 0 0
 f5 0 0 1 "CH-116BPM-Trumpet-BLUE2.wav" 0 0 0 
 f6 0 0 1 "CH-116BPM-Siren-BLUE3.wav" 0 0 0 
-f7 0 0 1 "CH-116BPM-Kick-BLUE4.wav" 0 0 0 
+f7 0 0 1 "CH-116BPM-Vocal-BLUE4.wav" 0 0 0
 
 f8 0 0 1 "MTF_Ambient_80bpm_Blue_1.wav" 0 0 0 
 f9 0 0 1 "MTF_Ambient_80bpm_Blue_2.wav" 0 0 0 
