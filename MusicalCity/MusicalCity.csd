@@ -39,7 +39,6 @@ instr 1
  		gkNodesPlaying[icount] = 0
  		giMetroTempos[icount] = 95
  		gkMetronomes[icount] = 0
- 		prints ""
  		icount += 1
  	od
 
@@ -383,12 +382,12 @@ f9 0 0 1 "MTF_Ambient_80bpm_Blue_2.wav" 0 0 0
 f10 0 0 1 "MTF_Ambient_80bpm_Blue_3.wav" 0 0 0 
 
 f11 0 0 1 "House-130BPM-Perk-Blue1.wav" 0 0 0 
-f12 0 0 1 "House-130BPM-Grinder-Blue2.wav" 0 0 0 
+f12 0 0 1 "House-130BPM-ARP-Blue2.wav" 0 0 0 
 f13 0 0 1 "House-130BPM-Lead-Blue3.wav" 0 0 0 
 
-f14 0 0 1 "MTF_Green_1.wav" 0 0 0 
+f14 0 0 1 "MTF_Green_3.wav" 0 0 0 
 f15 0 0 1 "MTF_Green_2.wav" 0 0 0 
-f16 0 0 1 "MTF_Green_3.wav" 0 0 0 
+f16 0 0 1 "MTF_Green_1.wav" 0 0 0 
 
 
 </CsScore>
