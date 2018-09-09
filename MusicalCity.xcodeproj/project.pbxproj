@@ -1,0 +1,753 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C1B59E5221440B1B00470122 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B59E5121440B1B00470122 /* AppDelegate.swift */; };
+		C1B59E5421440B1B00470122 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B59E5321440B1B00470122 /* ViewController.swift */; };
+		C1B59E5721440B1B00470122 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1B59E5521440B1B00470122 /* Main.storyboard */; };
+		C1B59E5921440B1D00470122 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1B59E5821440B1D00470122 /* Assets.xcassets */; };
+		C1B59E5C21440B1D00470122 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1B59E5A21440B1D00470122 /* LaunchScreen.storyboard */; };
+		C1B59E652144158200470122 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B59E642144158200470122 /* CoreLocation.framework */; };
+		C1B59E67214415F700470122 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B59E66214415F700470122 /* MapKit.framework */; };
+		C1B59E6A2144231700470122 /* Sound.csd in Resources */ = {isa = PBXBuildFile; fileRef = C1B59E692144231700470122 /* Sound.csd */; };
+		C1B5A1272144259B00470122 /* CsoundMIDI.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B5A0E52144259B00470122 /* CsoundMIDI.m */; };
+		C1B5A1282144259B00470122 /* MidiWidgetsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B5A0E62144259B00470122 /* MidiWidgetsManager.m */; };
+		C1B5A1292144259B00470122 /* SliderMidiWidgetWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B5A0E72144259B00470122 /* SliderMidiWidgetWrapper.m */; };
+		C1B5A12A2144259B00470122 /* CsoundObj.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B5A0EC2144259B00470122 /* CsoundObj.m */; };
+		C1B5A12B2144259B00470122 /* CsoundMomentaryButtonBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B5A0F02144259B00470122 /* CsoundMomentaryButtonBinding.m */; };
+		C1B5A12C2144259B00470122 /* CsoundLabelBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B5A0F22144259B00470122 /* CsoundLabelBinding.m */; };
+		C1B5A12D2144259B00470122 /* CsoundSwitchBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B5A0F32144259B00470122 /* CsoundSwitchBinding.m */; };
+		C1B5A12E2144259B00470122 /* CsoundButtonBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B5A0F42144259B00470122 /* CsoundButtonBinding.m */; };
+		C1B5A12F2144259B00470122 /* CsoundSliderBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B5A0F52144259B00470122 /* CsoundSliderBinding.m */; };
+		C1B5A1302144259B00470122 /* CsoundUI.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B5A0F62144259B00470122 /* CsoundUI.m */; };
+		C1B5A1312144259B00470122 /* CsoundAccelerometerBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B5A0FD2144259B00470122 /* CsoundAccelerometerBinding.m */; };
+		C1B5A1322144259B00470122 /* CsoundMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B5A1002144259B00470122 /* CsoundMotion.m */; };
+		C1B5A1332144259B00470122 /* CsoundGyroscopeBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B5A1022144259B00470122 /* CsoundGyroscopeBinding.m */; };
+		C1B5A1342144259B00470122 /* CsoundAttitudeBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B5A1032144259B00470122 /* CsoundAttitudeBinding.m */; };
+		C1B5A1352144259B00470122 /* libcsound.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B5A1052144259B00470122 /* libcsound.a */; };
+		C1B5A1362144259B00470122 /* libsndfile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B5A1062144259B00470122 /* libsndfile.a */; };
+		C1B5A1372144259B00470122 /* LICENSE.TXT in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A1262144259B00470122 /* LICENSE.TXT */; };
+		C1B5A139214426E300470122 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B5A138214426E300470122 /* Accelerate.framework */; };
+		C1B5A144214453AD00470122 /* MusicalCity.csd in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A13A214453AC00470122 /* MusicalCity.csd */; };
+		C1B5A1592144753F00FDC0A3 /* 8.aif in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A13C2144753F00FDC0A3 /* 8.aif */; };
+		C1B5A15A2144753F00FDC0A3 /* CH-116BPM-Siren-BLUE3.wav in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A13E2144753F00FDC0A3 /* CH-116BPM-Siren-BLUE3.wav */; };
+		C1B5A15B2144753F00FDC0A3 /* CH-116BPM-Vocal-BLUE1.wav in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A13F2144753F00FDC0A3 /* CH-116BPM-Vocal-BLUE1.wav */; };
+		C1B5A15C2144753F00FDC0A3 /* CH-116BPM-Main-PINK.wav in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A1402144753F00FDC0A3 /* CH-116BPM-Main-PINK.wav */; };
+		C1B5A15D2144753F00FDC0A3 /* Icon
+ in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A1412144753F00FDC0A3 /* Icon
+ */; };
+		C1B5A15E2144753F00FDC0A3 /* CH-116BPM-Trumpet-BLUE2.wav in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A1422144753F00FDC0A3 /* CH-116BPM-Trumpet-BLUE2.wav */; };
+		C1B5A15F2144753F00FDC0A3 /* CH-116BPM-Kick-BLUE4.wav in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A1432144753F00FDC0A3 /* CH-116BPM-Kick-BLUE4.wav */; };
+		C1B5A1602144753F00FDC0A3 /* MTF_Green_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A1442144753F00FDC0A3 /* MTF_Green_1.wav */; };
+		C1B5A1612144753F00FDC0A3 /* MTF_Green_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A1452144753F00FDC0A3 /* MTF_Green_3.wav */; };
+		C1B5A1622144753F00FDC0A3 /* MTF_Green_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A1462144753F00FDC0A3 /* MTF_Green_2.wav */; };
+		C1B5A1632144753F00FDC0A3 /* House-130BPM-Pink.wav in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A1482144753F00FDC0A3 /* House-130BPM-Pink.wav */; };
+		C1B5A1642144753F00FDC0A3 /* House-130BPM-Grinder-Blue2.wav in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A1492144753F00FDC0A3 /* House-130BPM-Grinder-Blue2.wav */; };
+		C1B5A1652144753F00FDC0A3 /* House-130BPM-Perk-Blue1.wav in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A14A2144753F00FDC0A3 /* House-130BPM-Perk-Blue1.wav */; };
+		C1B5A1662144753F00FDC0A3 /* House-130BPM-Lead-Blue3.wav in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A14B2144753F00FDC0A3 /* House-130BPM-Lead-Blue3.wav */; };
+		C1B5A1672144753F00FDC0A3 /* 7.aif in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A14C2144753F00FDC0A3 /* 7.aif */; };
+		C1B5A1682144753F00FDC0A3 /* 6.aif in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A14D2144753F00FDC0A3 /* 6.aif */; };
+		C1B5A1692144753F00FDC0A3 /* 4.aif in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A14E2144753F00FDC0A3 /* 4.aif */; };
+		C1B5A16A2144753F00FDC0A3 /* Icon
+ in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A1502144753F00FDC0A3 /* Icon
+ */; };
+		C1B5A16B2144753F00FDC0A3 /* MTF_Ambient_80bpm_Blue_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A1512144753F00FDC0A3 /* MTF_Ambient_80bpm_Blue_2.wav */; };
+		C1B5A16C2144753F00FDC0A3 /* MTF_Ambient_80bpm_Blue_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A1522144753F00FDC0A3 /* MTF_Ambient_80bpm_Blue_3.wav */; };
+		C1B5A16D2144753F00FDC0A3 /* MTF_Ambient_80bpm_Blue_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A1532144753F00FDC0A3 /* MTF_Ambient_80bpm_Blue_1.wav */; };
+		C1B5A16E2144753F00FDC0A3 /* MTF_Ambient_80bpm_Pink.wav in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A1542144753F00FDC0A3 /* MTF_Ambient_80bpm_Pink.wav */; };
+		C1B5A16F2144753F00FDC0A3 /* 5.aif in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A1552144753F00FDC0A3 /* 5.aif */; };
+		C1B5A1702144753F00FDC0A3 /* 1.aif in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A1562144753F00FDC0A3 /* 1.aif */; };
+		C1B5A1712144753F00FDC0A3 /* 2.aif in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A1572144753F00FDC0A3 /* 2.aif */; };
+		C1B5A1722144753F00FDC0A3 /* 3.aif in Resources */ = {isa = PBXBuildFile; fileRef = C1B5A1582144753F00FDC0A3 /* 3.aif */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C1B59E4E21440B1B00470122 /* MusicalCity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicalCity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1B59E5121440B1B00470122 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C1B59E5321440B1B00470122 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C1B59E5621440B1B00470122 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C1B59E5821440B1D00470122 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1B59E5B21440B1D00470122 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C1B59E5D21440B1D00470122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1B59E642144158200470122 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C1B59E66214415F700470122 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C1B59E682144224B00470122 /* MusicalCity-Bridging Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MusicalCity-Bridging Header.h"; sourceTree = "<group>"; };
+		C1B59E692144231700470122 /* Sound.csd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sound.csd; sourceTree = "<group>"; };
+		C1B5A0E32144259B00470122 /* CsoundObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CsoundObj.h; sourceTree = "<group>"; };
+		C1B5A0E52144259B00470122 /* CsoundMIDI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CsoundMIDI.m; sourceTree = "<group>"; };
+		C1B5A0E62144259B00470122 /* MidiWidgetsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidiWidgetsManager.m; sourceTree = "<group>"; };
+		C1B5A0E72144259B00470122 /* SliderMidiWidgetWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderMidiWidgetWrapper.m; sourceTree = "<group>"; };
+		C1B5A0E82144259B00470122 /* CsoundMIDI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CsoundMIDI.h; sourceTree = "<group>"; };
+		C1B5A0E92144259B00470122 /* SliderMidiWidgetWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderMidiWidgetWrapper.h; sourceTree = "<group>"; };
+		C1B5A0EA2144259B00470122 /* MidiWidgetsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiWidgetsManager.h; sourceTree = "<group>"; };
+		C1B5A0EB2144259B00470122 /* MidiWidgetWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiWidgetWrapper.h; sourceTree = "<group>"; };
+		C1B5A0EC2144259B00470122 /* CsoundObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CsoundObj.m; sourceTree = "<group>"; };
+		C1B5A0EF2144259B00470122 /* CsoundSliderBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CsoundSliderBinding.h; sourceTree = "<group>"; };
+		C1B5A0F02144259B00470122 /* CsoundMomentaryButtonBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CsoundMomentaryButtonBinding.m; sourceTree = "<group>"; };
+		C1B5A0F12144259B00470122 /* CsoundUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CsoundUI.h; sourceTree = "<group>"; };
+		C1B5A0F22144259B00470122 /* CsoundLabelBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CsoundLabelBinding.m; sourceTree = "<group>"; };
+		C1B5A0F32144259B00470122 /* CsoundSwitchBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CsoundSwitchBinding.m; sourceTree = "<group>"; };
+		C1B5A0F42144259B00470122 /* CsoundButtonBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CsoundButtonBinding.m; sourceTree = "<group>"; };
+		C1B5A0F52144259B00470122 /* CsoundSliderBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CsoundSliderBinding.m; sourceTree = "<group>"; };
+		C1B5A0F62144259B00470122 /* CsoundUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CsoundUI.m; sourceTree = "<group>"; };
+		C1B5A0F72144259B00470122 /* CsoundMomentaryButtonBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CsoundMomentaryButtonBinding.h; sourceTree = "<group>"; };
+		C1B5A0F82144259B00470122 /* CsoundLabelBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CsoundLabelBinding.h; sourceTree = "<group>"; };
+		C1B5A0F92144259B00470122 /* CsoundButtonBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CsoundButtonBinding.h; sourceTree = "<group>"; };
+		C1B5A0FA2144259B00470122 /* CsoundSwitchBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CsoundSwitchBinding.h; sourceTree = "<group>"; };
+		C1B5A0FC2144259B00470122 /* CsoundGyroscopeBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CsoundGyroscopeBinding.h; sourceTree = "<group>"; };
+		C1B5A0FD2144259B00470122 /* CsoundAccelerometerBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CsoundAccelerometerBinding.m; sourceTree = "<group>"; };
+		C1B5A0FE2144259B00470122 /* CsoundMotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CsoundMotion.h; sourceTree = "<group>"; };
+		C1B5A0FF2144259B00470122 /* CsoundAttitudeBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CsoundAttitudeBinding.h; sourceTree = "<group>"; };
+		C1B5A1002144259B00470122 /* CsoundMotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CsoundMotion.m; sourceTree = "<group>"; };
+		C1B5A1012144259B00470122 /* CsoundAccelerometerBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CsoundAccelerometerBinding.h; sourceTree = "<group>"; };
+		C1B5A1022144259B00470122 /* CsoundGyroscopeBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CsoundGyroscopeBinding.m; sourceTree = "<group>"; };
+		C1B5A1032144259B00470122 /* CsoundAttitudeBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CsoundAttitudeBinding.m; sourceTree = "<group>"; };
+		C1B5A1052144259B00470122 /* libcsound.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcsound.a; sourceTree = "<group>"; };
+		C1B5A1062144259B00470122 /* libsndfile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsndfile.a; sourceTree = "<group>"; };
+		C1B5A1082144259B00470122 /* csdebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = csdebug.h; sourceTree = "<group>"; };
+		C1B5A1092144259B00470122 /* sysdep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sysdep.h; sourceTree = "<group>"; };
+		C1B5A10A2144259B00470122 /* float-version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "float-version.h"; sourceTree = "<group>"; };
+		C1B5A10B2144259B00470122 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		C1B5A10C2144259B00470122 /* OpcodeBase.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = OpcodeBase.hpp; sourceTree = "<group>"; };
+		C1B5A10D2144259B00470122 /* plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plugin.h; sourceTree = "<group>"; };
+		C1B5A10E2144259B00470122 /* text.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = text.h; sourceTree = "<group>"; };
+		C1B5A10F2144259B00470122 /* csound_standard_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = csound_standard_types.h; sourceTree = "<group>"; };
+		C1B5A1102144259B00470122 /* pvfileio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pvfileio.h; sourceTree = "<group>"; };
+		C1B5A1112144259B00470122 /* interlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interlocks.h; sourceTree = "<group>"; };
+		C1B5A1122144259B00470122 /* pstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pstream.h; sourceTree = "<group>"; };
+		C1B5A1132144259B00470122 /* csound.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = csound.hpp; sourceTree = "<group>"; };
+		C1B5A1142144259B00470122 /* modload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modload.h; sourceTree = "<group>"; };
+		C1B5A1152144259B00470122 /* CppSound.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CppSound.hpp; sourceTree = "<group>"; };
+		C1B5A1162144259B00470122 /* cs_par_structs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cs_par_structs.h; sourceTree = "<group>"; };
+		C1B5A1172144259B00470122 /* csound_threaded.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = csound_threaded.hpp; sourceTree = "<group>"; };
+		C1B5A1182144259B00470122 /* ugen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ugen.h; sourceTree = "<group>"; };
+		C1B5A1192144259B00470122 /* csoundCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = csoundCore.h; sourceTree = "<group>"; };
+		C1B5A11A2144259B00470122 /* soundio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soundio.h; sourceTree = "<group>"; };
+		C1B5A11B2144259B00470122 /* pools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pools.h; sourceTree = "<group>"; };
+		C1B5A11C2144259B00470122 /* filebuilding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filebuilding.h; sourceTree = "<group>"; };
+		C1B5A11D2144259B00470122 /* csound_type_system.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = csound_type_system.h; sourceTree = "<group>"; };
+		C1B5A11E2144259B00470122 /* csound_data_structures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = csound_data_structures.h; sourceTree = "<group>"; };
+		C1B5A11F2144259B00470122 /* cscore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cscore.h; sourceTree = "<group>"; };
+		C1B5A1202144259B00470122 /* msg_attr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = msg_attr.h; sourceTree = "<group>"; };
+		C1B5A1212144259B00470122 /* cfgvar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cfgvar.h; sourceTree = "<group>"; };
+		C1B5A1222144259B00470122 /* csdl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = csdl.h; sourceTree = "<group>"; };
+		C1B5A1232144259B00470122 /* cwindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cwindow.h; sourceTree = "<group>"; };
+		C1B5A1242144259B00470122 /* CsoundFile.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CsoundFile.hpp; sourceTree = "<group>"; };
+		C1B5A1252144259B00470122 /* csound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = csound.h; sourceTree = "<group>"; };
+		C1B5A1262144259B00470122 /* LICENSE.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.TXT; sourceTree = "<group>"; };
+		C1B5A138214426E300470122 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		C1B5A13A214453AC00470122 /* MusicalCity.csd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MusicalCity.csd; sourceTree = "<group>"; };
+		C1B5A13C2144753F00FDC0A3 /* 8.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = 8.aif; sourceTree = "<group>"; };
+		C1B5A13E2144753F00FDC0A3 /* CH-116BPM-Siren-BLUE3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "CH-116BPM-Siren-BLUE3.wav"; sourceTree = "<group>"; };
+		C1B5A13F2144753F00FDC0A3 /* CH-116BPM-Vocal-BLUE1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "CH-116BPM-Vocal-BLUE1.wav"; sourceTree = "<group>"; };
+		C1B5A1402144753F00FDC0A3 /* CH-116BPM-Main-PINK.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "CH-116BPM-Main-PINK.wav"; sourceTree = "<group>"; };
+		C1B5A1412144753F00FDC0A3 /* Icon
+ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Icon
+"; sourceTree = "<group>"; };
+		C1B5A1422144753F00FDC0A3 /* CH-116BPM-Trumpet-BLUE2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "CH-116BPM-Trumpet-BLUE2.wav"; sourceTree = "<group>"; };
+		C1B5A1432144753F00FDC0A3 /* CH-116BPM-Kick-BLUE4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "CH-116BPM-Kick-BLUE4.wav"; sourceTree = "<group>"; };
+		C1B5A1442144753F00FDC0A3 /* MTF_Green_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = MTF_Green_1.wav; sourceTree = "<group>"; };
+		C1B5A1452144753F00FDC0A3 /* MTF_Green_3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = MTF_Green_3.wav; sourceTree = "<group>"; };
+		C1B5A1462144753F00FDC0A3 /* MTF_Green_2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = MTF_Green_2.wav; sourceTree = "<group>"; };
+		C1B5A1482144753F00FDC0A3 /* House-130BPM-Pink.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "House-130BPM-Pink.wav"; sourceTree = "<group>"; };
+		C1B5A1492144753F00FDC0A3 /* House-130BPM-Grinder-Blue2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "House-130BPM-Grinder-Blue2.wav"; sourceTree = "<group>"; };
+		C1B5A14A2144753F00FDC0A3 /* House-130BPM-Perk-Blue1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "House-130BPM-Perk-Blue1.wav"; sourceTree = "<group>"; };
+		C1B5A14B2144753F00FDC0A3 /* House-130BPM-Lead-Blue3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "House-130BPM-Lead-Blue3.wav"; sourceTree = "<group>"; };
+		C1B5A14C2144753F00FDC0A3 /* 7.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = 7.aif; sourceTree = "<group>"; };
+		C1B5A14D2144753F00FDC0A3 /* 6.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = 6.aif; sourceTree = "<group>"; };
+		C1B5A14E2144753F00FDC0A3 /* 4.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4.aif; sourceTree = "<group>"; };
+		C1B5A1502144753F00FDC0A3 /* Icon
+ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Icon
+"; sourceTree = "<group>"; };
+		C1B5A1512144753F00FDC0A3 /* MTF_Ambient_80bpm_Blue_2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = MTF_Ambient_80bpm_Blue_2.wav; sourceTree = "<group>"; };
+		C1B5A1522144753F00FDC0A3 /* MTF_Ambient_80bpm_Blue_3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = MTF_Ambient_80bpm_Blue_3.wav; sourceTree = "<group>"; };
+		C1B5A1532144753F00FDC0A3 /* MTF_Ambient_80bpm_Blue_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = MTF_Ambient_80bpm_Blue_1.wav; sourceTree = "<group>"; };
+		C1B5A1542144753F00FDC0A3 /* MTF_Ambient_80bpm_Pink.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = MTF_Ambient_80bpm_Pink.wav; sourceTree = "<group>"; };
+		C1B5A1552144753F00FDC0A3 /* 5.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5.aif; sourceTree = "<group>"; };
+		C1B5A1562144753F00FDC0A3 /* 1.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.aif; sourceTree = "<group>"; };
+		C1B5A1572144753F00FDC0A3 /* 2.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2.aif; sourceTree = "<group>"; };
+		C1B5A1582144753F00FDC0A3 /* 3.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3.aif; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1B59E4B21440B1B00470122 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1B5A139214426E300470122 /* Accelerate.framework in Frameworks */,
+				C1B59E67214415F700470122 /* MapKit.framework in Frameworks */,
+				C1B59E652144158200470122 /* CoreLocation.framework in Frameworks */,
+				C1B5A1352144259B00470122 /* libcsound.a in Frameworks */,
+				C1B5A1362144259B00470122 /* libsndfile.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C1B59E4521440B1B00470122 = {
+			isa = PBXGroup;
+			children = (
+				C1B59E5021440B1B00470122 /* MusicalCity */,
+				C1B59E4F21440B1B00470122 /* Products */,
+				C1B59E632144158200470122 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C1B59E4F21440B1B00470122 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1B59E4E21440B1B00470122 /* MusicalCity.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1B59E5021440B1B00470122 /* MusicalCity */ = {
+			isa = PBXGroup;
+			children = (
+				C1B5A13B2144753F00FDC0A3 /* Samples */,
+				C1B5A13A214453AC00470122 /* MusicalCity.csd */,
+				C1B5A0E12144259B00470122 /* csound-iOS */,
+				C1B59E692144231700470122 /* Sound.csd */,
+				C1B59E5121440B1B00470122 /* AppDelegate.swift */,
+				C1B59E5321440B1B00470122 /* ViewController.swift */,
+				C1B59E5521440B1B00470122 /* Main.storyboard */,
+				C1B59E5821440B1D00470122 /* Assets.xcassets */,
+				C1B59E5A21440B1D00470122 /* LaunchScreen.storyboard */,
+				C1B59E5D21440B1D00470122 /* Info.plist */,
+				C1B59E682144224B00470122 /* MusicalCity-Bridging Header.h */,
+			);
+			path = MusicalCity;
+			sourceTree = "<group>";
+		};
+		C1B59E632144158200470122 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1B5A138214426E300470122 /* Accelerate.framework */,
+				C1B59E66214415F700470122 /* MapKit.framework */,
+				C1B59E642144158200470122 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1B5A0E12144259B00470122 /* csound-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C1B5A0E22144259B00470122 /* classes */,
+				C1B5A1042144259B00470122 /* libs */,
+				C1B5A1072144259B00470122 /* headers */,
+				C1B5A1262144259B00470122 /* LICENSE.TXT */,
+			);
+			path = "csound-iOS";
+			sourceTree = "<group>";
+		};
+		C1B5A0E22144259B00470122 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				C1B5A0E32144259B00470122 /* CsoundObj.h */,
+				C1B5A0E42144259B00470122 /* midi */,
+				C1B5A0EC2144259B00470122 /* CsoundObj.m */,
+				C1B5A0ED2144259B00470122 /* bindings */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		C1B5A0E42144259B00470122 /* midi */ = {
+			isa = PBXGroup;
+			children = (
+				C1B5A0E52144259B00470122 /* CsoundMIDI.m */,
+				C1B5A0E62144259B00470122 /* MidiWidgetsManager.m */,
+				C1B5A0E72144259B00470122 /* SliderMidiWidgetWrapper.m */,
+				C1B5A0E82144259B00470122 /* CsoundMIDI.h */,
+				C1B5A0E92144259B00470122 /* SliderMidiWidgetWrapper.h */,
+				C1B5A0EA2144259B00470122 /* MidiWidgetsManager.h */,
+				C1B5A0EB2144259B00470122 /* MidiWidgetWrapper.h */,
+			);
+			path = midi;
+			sourceTree = "<group>";
+		};
+		C1B5A0ED2144259B00470122 /* bindings */ = {
+			isa = PBXGroup;
+			children = (
+				C1B5A0EE2144259B00470122 /* ui */,
+				C1B5A0FB2144259B00470122 /* motion */,
+			);
+			path = bindings;
+			sourceTree = "<group>";
+		};
+		C1B5A0EE2144259B00470122 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				C1B5A0EF2144259B00470122 /* CsoundSliderBinding.h */,
+				C1B5A0F02144259B00470122 /* CsoundMomentaryButtonBinding.m */,
+				C1B5A0F12144259B00470122 /* CsoundUI.h */,
+				C1B5A0F22144259B00470122 /* CsoundLabelBinding.m */,
+				C1B5A0F32144259B00470122 /* CsoundSwitchBinding.m */,
+				C1B5A0F42144259B00470122 /* CsoundButtonBinding.m */,
+				C1B5A0F52144259B00470122 /* CsoundSliderBinding.m */,
+				C1B5A0F62144259B00470122 /* CsoundUI.m */,
+				C1B5A0F72144259B00470122 /* CsoundMomentaryButtonBinding.h */,
+				C1B5A0F82144259B00470122 /* CsoundLabelBinding.h */,
+				C1B5A0F92144259B00470122 /* CsoundButtonBinding.h */,
+				C1B5A0FA2144259B00470122 /* CsoundSwitchBinding.h */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		C1B5A0FB2144259B00470122 /* motion */ = {
+			isa = PBXGroup;
+			children = (
+				C1B5A0FC2144259B00470122 /* CsoundGyroscopeBinding.h */,
+				C1B5A0FD2144259B00470122 /* CsoundAccelerometerBinding.m */,
+				C1B5A0FE2144259B00470122 /* CsoundMotion.h */,
+				C1B5A0FF2144259B00470122 /* CsoundAttitudeBinding.h */,
+				C1B5A1002144259B00470122 /* CsoundMotion.m */,
+				C1B5A1012144259B00470122 /* CsoundAccelerometerBinding.h */,
+				C1B5A1022144259B00470122 /* CsoundGyroscopeBinding.m */,
+				C1B5A1032144259B00470122 /* CsoundAttitudeBinding.m */,
+			);
+			path = motion;
+			sourceTree = "<group>";
+		};
+		C1B5A1042144259B00470122 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				C1B5A1052144259B00470122 /* libcsound.a */,
+				C1B5A1062144259B00470122 /* libsndfile.a */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		C1B5A1072144259B00470122 /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				C1B5A1082144259B00470122 /* csdebug.h */,
+				C1B5A1092144259B00470122 /* sysdep.h */,
+				C1B5A10A2144259B00470122 /* float-version.h */,
+				C1B5A10B2144259B00470122 /* version.h */,
+				C1B5A10C2144259B00470122 /* OpcodeBase.hpp */,
+				C1B5A10D2144259B00470122 /* plugin.h */,
+				C1B5A10E2144259B00470122 /* text.h */,
+				C1B5A10F2144259B00470122 /* csound_standard_types.h */,
+				C1B5A1102144259B00470122 /* pvfileio.h */,
+				C1B5A1112144259B00470122 /* interlocks.h */,
+				C1B5A1122144259B00470122 /* pstream.h */,
+				C1B5A1132144259B00470122 /* csound.hpp */,
+				C1B5A1142144259B00470122 /* modload.h */,
+				C1B5A1152144259B00470122 /* CppSound.hpp */,
+				C1B5A1162144259B00470122 /* cs_par_structs.h */,
+				C1B5A1172144259B00470122 /* csound_threaded.hpp */,
+				C1B5A1182144259B00470122 /* ugen.h */,
+				C1B5A1192144259B00470122 /* csoundCore.h */,
+				C1B5A11A2144259B00470122 /* soundio.h */,
+				C1B5A11B2144259B00470122 /* pools.h */,
+				C1B5A11C2144259B00470122 /* filebuilding.h */,
+				C1B5A11D2144259B00470122 /* csound_type_system.h */,
+				C1B5A11E2144259B00470122 /* csound_data_structures.h */,
+				C1B5A11F2144259B00470122 /* cscore.h */,
+				C1B5A1202144259B00470122 /* msg_attr.h */,
+				C1B5A1212144259B00470122 /* cfgvar.h */,
+				C1B5A1222144259B00470122 /* csdl.h */,
+				C1B5A1232144259B00470122 /* cwindow.h */,
+				C1B5A1242144259B00470122 /* CsoundFile.hpp */,
+				C1B5A1252144259B00470122 /* csound.h */,
+			);
+			path = headers;
+			sourceTree = "<group>";
+		};
+		C1B5A13B2144753F00FDC0A3 /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				C1B5A13C2144753F00FDC0A3 /* 8.aif */,
+				C1B5A13D2144753F00FDC0A3 /* 2-ChillHouse-116BPM */,
+				C1B5A1442144753F00FDC0A3 /* MTF_Green_1.wav */,
+				C1B5A1452144753F00FDC0A3 /* MTF_Green_3.wav */,
+				C1B5A1462144753F00FDC0A3 /* MTF_Green_2.wav */,
+				C1B5A1472144753F00FDC0A3 /* 3-House-130BPM */,
+				C1B5A14C2144753F00FDC0A3 /* 7.aif */,
+				C1B5A14D2144753F00FDC0A3 /* 6.aif */,
+				C1B5A14E2144753F00FDC0A3 /* 4.aif */,
+				C1B5A14F2144753F00FDC0A3 /* 1-Ambient-80BPM */,
+				C1B5A1552144753F00FDC0A3 /* 5.aif */,
+				C1B5A1562144753F00FDC0A3 /* 1.aif */,
+				C1B5A1572144753F00FDC0A3 /* 2.aif */,
+				C1B5A1582144753F00FDC0A3 /* 3.aif */,
+			);
+			path = Samples;
+			sourceTree = "<group>";
+		};
+		C1B5A13D2144753F00FDC0A3 /* 2-ChillHouse-116BPM */ = {
+			isa = PBXGroup;
+			children = (
+				C1B5A13E2144753F00FDC0A3 /* CH-116BPM-Siren-BLUE3.wav */,
+				C1B5A13F2144753F00FDC0A3 /* CH-116BPM-Vocal-BLUE1.wav */,
+				C1B5A1402144753F00FDC0A3 /* CH-116BPM-Main-PINK.wav */,
+				C1B5A1412144753F00FDC0A3 /* Icon
+ */,
+				C1B5A1422144753F00FDC0A3 /* CH-116BPM-Trumpet-BLUE2.wav */,
+				C1B5A1432144753F00FDC0A3 /* CH-116BPM-Kick-BLUE4.wav */,
+			);
+			path = "2-ChillHouse-116BPM";
+			sourceTree = "<group>";
+		};
+		C1B5A1472144753F00FDC0A3 /* 3-House-130BPM */ = {
+			isa = PBXGroup;
+			children = (
+				C1B5A1482144753F00FDC0A3 /* House-130BPM-Pink.wav */,
+				C1B5A1492144753F00FDC0A3 /* House-130BPM-Grinder-Blue2.wav */,
+				C1B5A14A2144753F00FDC0A3 /* House-130BPM-Perk-Blue1.wav */,
+				C1B5A14B2144753F00FDC0A3 /* House-130BPM-Lead-Blue3.wav */,
+			);
+			path = "3-House-130BPM";
+			sourceTree = "<group>";
+		};
+		C1B5A14F2144753F00FDC0A3 /* 1-Ambient-80BPM */ = {
+			isa = PBXGroup;
+			children = (
+				C1B5A1502144753F00FDC0A3 /* Icon
+ */,
+				C1B5A1512144753F00FDC0A3 /* MTF_Ambient_80bpm_Blue_2.wav */,
+				C1B5A1522144753F00FDC0A3 /* MTF_Ambient_80bpm_Blue_3.wav */,
+				C1B5A1532144753F00FDC0A3 /* MTF_Ambient_80bpm_Blue_1.wav */,
+				C1B5A1542144753F00FDC0A3 /* MTF_Ambient_80bpm_Pink.wav */,
+			);
+			path = "1-Ambient-80BPM";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1B59E4D21440B1B00470122 /* MusicalCity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1B59E6021440B1D00470122 /* Build configuration list for PBXNativeTarget "MusicalCity" */;
+			buildPhases = (
+				C1B59E4A21440B1B00470122 /* Sources */,
+				C1B59E4B21440B1B00470122 /* Frameworks */,
+				C1B59E4C21440B1B00470122 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MusicalCity;
+			productName = MusicalCity;
+			productReference = C1B59E4E21440B1B00470122 /* MusicalCity.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1B59E4621440B1B00470122 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Radius";
+				TargetAttributes = {
+					C1B59E4D21440B1B00470122 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = C1B59E4921440B1B00470122 /* Build configuration list for PBXProject "MusicalCity" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C1B59E4521440B1B00470122;
+			productRefGroup = C1B59E4F21440B1B00470122 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1B59E4D21440B1B00470122 /* MusicalCity */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C1B59E4C21440B1B00470122 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1B5A1672144753F00FDC0A3 /* 7.aif in Resources */,
+				C1B5A15D2144753F00FDC0A3 /* Icon
+ in Resources */,
+				C1B5A1652144753F00FDC0A3 /* House-130BPM-Perk-Blue1.wav in Resources */,
+				C1B5A16A2144753F00FDC0A3 /* Icon
+ in Resources */,
+				C1B5A1662144753F00FDC0A3 /* House-130BPM-Lead-Blue3.wav in Resources */,
+				C1B5A16C2144753F00FDC0A3 /* MTF_Ambient_80bpm_Blue_3.wav in Resources */,
+				C1B5A1702144753F00FDC0A3 /* 1.aif in Resources */,
+				C1B5A1642144753F00FDC0A3 /* House-130BPM-Grinder-Blue2.wav in Resources */,
+				C1B5A144214453AD00470122 /* MusicalCity.csd in Resources */,
+				C1B59E6A2144231700470122 /* Sound.csd in Resources */,
+				C1B5A1692144753F00FDC0A3 /* 4.aif in Resources */,
+				C1B5A1622144753F00FDC0A3 /* MTF_Green_2.wav in Resources */,
+				C1B5A15A2144753F00FDC0A3 /* CH-116BPM-Siren-BLUE3.wav in Resources */,
+				C1B59E5C21440B1D00470122 /* LaunchScreen.storyboard in Resources */,
+				C1B5A1592144753F00FDC0A3 /* 8.aif in Resources */,
+				C1B5A16B2144753F00FDC0A3 /* MTF_Ambient_80bpm_Blue_2.wav in Resources */,
+				C1B5A16F2144753F00FDC0A3 /* 5.aif in Resources */,
+				C1B5A16E2144753F00FDC0A3 /* MTF_Ambient_80bpm_Pink.wav in Resources */,
+				C1B5A1682144753F00FDC0A3 /* 6.aif in Resources */,
+				C1B5A1612144753F00FDC0A3 /* MTF_Green_3.wav in Resources */,
+				C1B5A16D2144753F00FDC0A3 /* MTF_Ambient_80bpm_Blue_1.wav in Resources */,
+				C1B5A1372144259B00470122 /* LICENSE.TXT in Resources */,
+				C1B5A1722144753F00FDC0A3 /* 3.aif in Resources */,
+				C1B5A15E2144753F00FDC0A3 /* CH-116BPM-Trumpet-BLUE2.wav in Resources */,
+				C1B59E5921440B1D00470122 /* Assets.xcassets in Resources */,
+				C1B5A1632144753F00FDC0A3 /* House-130BPM-Pink.wav in Resources */,
+				C1B5A15C2144753F00FDC0A3 /* CH-116BPM-Main-PINK.wav in Resources */,
+				C1B5A15B2144753F00FDC0A3 /* CH-116BPM-Vocal-BLUE1.wav in Resources */,
+				C1B5A15F2144753F00FDC0A3 /* CH-116BPM-Kick-BLUE4.wav in Resources */,
+				C1B5A1712144753F00FDC0A3 /* 2.aif in Resources */,
+				C1B5A1602144753F00FDC0A3 /* MTF_Green_1.wav in Resources */,
+				C1B59E5721440B1B00470122 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1B59E4A21440B1B00470122 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1B5A12D2144259B00470122 /* CsoundSwitchBinding.m in Sources */,
+				C1B5A1282144259B00470122 /* MidiWidgetsManager.m in Sources */,
+				C1B5A12A2144259B00470122 /* CsoundObj.m in Sources */,
+				C1B5A12F2144259B00470122 /* CsoundSliderBinding.m in Sources */,
+				C1B5A1292144259B00470122 /* SliderMidiWidgetWrapper.m in Sources */,
+				C1B5A1312144259B00470122 /* CsoundAccelerometerBinding.m in Sources */,
+				C1B5A1272144259B00470122 /* CsoundMIDI.m in Sources */,
+				C1B5A1332144259B00470122 /* CsoundGyroscopeBinding.m in Sources */,
+				C1B5A12E2144259B00470122 /* CsoundButtonBinding.m in Sources */,
+				C1B5A1302144259B00470122 /* CsoundUI.m in Sources */,
+				C1B59E5421440B1B00470122 /* ViewController.swift in Sources */,
+				C1B59E5221440B1B00470122 /* AppDelegate.swift in Sources */,
+				C1B5A1322144259B00470122 /* CsoundMotion.m in Sources */,
+				C1B5A1342144259B00470122 /* CsoundAttitudeBinding.m in Sources */,
+				C1B5A12C2144259B00470122 /* CsoundLabelBinding.m in Sources */,
+				C1B5A12B2144259B00470122 /* CsoundMomentaryButtonBinding.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C1B59E5521440B1B00470122 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1B59E5621440B1B00470122 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C1B59E5A21440B1D00470122 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1B59E5B21440B1D00470122 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C1B59E5E21440B1D00470122 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C1B59E5F21440B1D00470122 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1B59E6121440B1D00470122 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5682JHYF5Y;
+				INFOPLIST_FILE = MusicalCity/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MusicalCity/csound-iOS/libs",
+				);
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.coolpeople.radius;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MusicalCity/MusicalCity-Bridging Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C1B59E6221440B1D00470122 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5682JHYF5Y;
+				INFOPLIST_FILE = MusicalCity/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MusicalCity/csound-iOS/libs",
+				);
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.coolpeople.radius;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MusicalCity/MusicalCity-Bridging Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1B59E4921440B1B00470122 /* Build configuration list for PBXProject "MusicalCity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1B59E5E21440B1D00470122 /* Debug */,
+				C1B59E5F21440B1D00470122 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1B59E6021440B1D00470122 /* Build configuration list for PBXNativeTarget "MusicalCity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1B59E6121440B1D00470122 /* Debug */,
+				C1B59E6221440B1D00470122 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C1B59E4621440B1B00470122 /* Project object */;
+}
